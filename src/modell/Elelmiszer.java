@@ -24,7 +24,7 @@ public abstract class Elelmiszer implements Serializable, Comparable<Elelmiszer>
         this.nev = nev;
         this.gyarto = gyarto;
         if (lejaratiDatum.before(c.getTime()) || lejaratiDatum == c.getTime()) {
-            throw new LejártException("Nem jó dátum");
+            throw new LejártException();
         } else {
             this.lejaratiDatum = lejaratiDatum;
         }

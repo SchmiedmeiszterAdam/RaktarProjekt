@@ -11,7 +11,7 @@ package modell;
  */
 public class LejártException extends Exception {
 
-    public LejártException(String nem_jó_dátum) {
+    public LejártException() {
         super("Lejárt élelmiszer");
     }
     
