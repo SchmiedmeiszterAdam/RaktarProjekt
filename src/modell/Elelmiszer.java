@@ -13,7 +13,7 @@ import java.util.Date;
  *
  * @author vizsgaszf
  */
-public abstract class Elelmiszer implements Serializable{
+public abstract class Elelmiszer implements Serializable, Comparable<Elelmiszer>{
 
     private String nev;
     private String gyarto;
