@@ -11,10 +11,17 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import modell.Elelmiszer;
+import modell.GyartoComparator;
 import modell.Konzerv;
+import modell.LejártException;
+import modell.NevComparator;
 import modell.Raktar;
 
 /**
@@ -26,7 +33,7 @@ public class Program {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, LejártException {
         Raktar raktar = new Raktar();
         mentes(raktar);
         betolt();
