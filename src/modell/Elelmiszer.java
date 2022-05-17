@@ -5,6 +5,7 @@
  */
 package modell;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -12,7 +13,7 @@ import java.util.Date;
  *
  * @author vizsgaszf
  */
-public abstract class Elelmiszer {
+public abstract class Elelmiszer implements Serializable{
 
     private String nev;
     private String gyarto;
@@ -44,6 +45,4 @@ public abstract class Elelmiszer {
     public String getGyarto() {
         return gyarto;
     }
-    
-
 }

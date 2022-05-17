@@ -5,6 +5,7 @@
  */
 package modell;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -14,7 +15,7 @@ import java.util.List;
  *
  * @author vizsgaszf
  */
-public class Raktar implements Iterable<Elelmiszer>{
+public class Raktar implements Iterable<Elelmiszer>, Serializable{
     private ArrayList<Elelmiszer> elelmiszerek;
 
     public Raktar() {
@@ -51,5 +52,5 @@ public class Raktar implements Iterable<Elelmiszer>{
             return elelmiszerek.get(i++);
         }
 
-    }
+    }     
 }
